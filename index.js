@@ -1,8 +1,8 @@
 import Chart from 'chart.js';
 
 const ctx = document.getElementById('myChart');
-const myChart = new Chart(ctx, {
-  type: 'bar',
+const config = {
+  type: 'line',
   data: {
     labels: ['赤', '青', '黄', '緑', '紫', '橙'],
     datasets: [
@@ -40,4 +40,5 @@ const myChart = new Chart(ctx, {
       ],
     },
   },
-});
+};
+new Chart(ctx, config);
